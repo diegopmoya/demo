@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion'
 import { 
-  ClipboardCheck, 
   CheckCircle2, 
   XCircle, 
   AlertTriangle,
   Clock,
-  Eye,
-  FileText
+  Eye
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -14,7 +12,7 @@ import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { mockQualityInspections, mockPieces } from '@/data/mockData'
-import { cn, formatDate, getStatusColor, getStatusLabel } from '@/lib/utils'
+import { cn, formatDate } from '@/lib/utils'
 
 const containerVariants = {
   hidden: { opacity: 0 },

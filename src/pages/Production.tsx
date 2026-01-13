@@ -1,29 +1,21 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { 
-  Factory, 
   Activity, 
-  Gauge, 
-  Clock,
   AlertTriangle,
   CheckCircle2,
   Pause,
-  Play,
-  Settings,
   Wrench
 } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { mockMachines, mockScheduleEvents, mockPieces, mockProjects } from '@/data/mockData'
+import { mockMachines, mockPieces, mockProjects } from '@/data/mockData'
 import { 
   cn, 
-  formatDateTime,
   getStatusColor, 
-  getStatusLabel,
-  formatPercentage
+  getStatusLabel
 } from '@/lib/utils'
 
 const containerVariants = {
@@ -40,7 +32,7 @@ const itemVariants = {
 }
 
 export function Production() {
-  const [selectedMachine, setSelectedMachine] = useState<string | null>(null)
+  const [, setSelectedMachine] = useState<string | null>(null)
 
   const machineStats = {
     operational: mockMachines.filter(m => m.status === 'operational').length,

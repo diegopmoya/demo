@@ -4,12 +4,10 @@ import { motion } from 'framer-motion'
 import { 
   Plus, 
   Search, 
-  Filter, 
   MoreVertical,
   Calendar,
   Users,
-  Package,
-  ArrowUpRight
+  Package
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -20,7 +18,6 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { mockProjects } from '@/data/mockData'
 import { 
   cn, 
-  formatDate, 
   formatCurrency, 
   getStatusColor, 
   getStatusLabel,
