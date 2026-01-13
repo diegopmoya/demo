@@ -7,7 +7,6 @@ import {
   Lightbulb,
   TrendingUp,
   AlertTriangle,
-  Clock,
   MessageSquare,
   Zap
 } from 'lucide-react'

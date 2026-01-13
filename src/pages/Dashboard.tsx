@@ -4,7 +4,6 @@ import {
   TrendingUp, 
   Package, 
   AlertTriangle,
-  CheckCircle2,
   Clock,
   Factory,
   Gauge
@@ -13,8 +12,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
 import { 
-  LineChart, 
-  Line, 
   XAxis, 
   YAxis, 
   CartesianGrid, 
@@ -32,11 +29,9 @@ import {
 } from '@/data/mockData'
 import { 
   cn, 
-  formatNumber, 
   formatPercentage, 
   getStatusColor, 
-  getStatusLabel,
-  getSeverityColor
+  getStatusLabel
 } from '@/lib/utils'
 
 const containerVariants = {
